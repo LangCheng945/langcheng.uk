@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - 找不到網頁</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #d6e6d0; /* 淡抹茶背景 */
+      color: #3d5c3c; /* 深抹茶字體 */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 8rem;
+      margin: 0;
+      color: #7fb77e; /* 抹茶綠 */
+      animation: bounce 1.5s infinite;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .small {
+      font-size: 1rem;
+      color: #5a775a;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #7fb77e;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background-color: #6ca76b;
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>找不到網頁!!!!!!!!</p>
+  <p class="small">也許它被搬走了，或從未存在過。</p>
+  <a href="/" class="btn">暫時還沒有首頁 🍵</a>
+</body>
+</html>
