@@ -1,61 +1,49 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - 找不到網頁</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Noto Sans TC", sans-serif;
-      background-color: #d6e6d0; /* 淡抹茶背景 */
-      color: #3d5c3c; /* 深抹茶字體 */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      font-size: 8rem;
-      margin: 0;
-      color: #7fb77e; /* 抹茶綠 */
-      animation: bounce 1.5s infinite;
-    }
-    p {
-      font-size: 1.5rem;
-      margin: 10px 0;
-    }
-    .small {
-      font-size: 1rem;
-      color: #5a775a;
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-    }
-    .btn {
-      margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #7fb77e;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: transform 0.2s;
-    }
-    .btn:hover {
-      transform: scale(1.05);
-      background-color: #6ca76b;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#e7f1e4">
+<title>404 找不到頁面｜LangCheng</title>
+<style>
+:root{color-scheme:light;--bg:#e7f1e4;--ink:#243e2b;--muted:#536a58;--line:#c7d9c6;--green:#2f6541}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;min-height:100svh;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.75;display:flex;flex-direction:column}
+.wrap{width:min(1100px,calc(100% - 40px));margin-inline:auto}
+nav{padding:25px 0;border-bottom:1px solid var(--line)}
+a{color:inherit;text-underline-offset:5px}
+.brand{font-weight:800;letter-spacing:.04em;text-decoration:none}
+main{flex:1;display:grid;place-items:center;padding:50px 0 65px;text-align:center}
+.scene{position:relative;isolation:isolate;width:min(100%,500px);margin:0 auto 24px}
+.scene:before{content:"";position:absolute;z-index:-1;inset:8% 13%;border-radius:50%;background:#d5e6d0;transform:rotate(-12deg)}
+.number{font-size:clamp(7rem,26vw,12rem);line-height:1.15;letter-spacing:-.07em;font-weight:850;color:var(--green)}
+.sprout{position:absolute;width:70px;height:90px;right:14%;bottom:0;transform:rotate(12deg)}
+.eyebrow{font-size:.75rem;letter-spacing:.18em;font-weight:700;color:var(--green);margin:0 0 12px}
+h1{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.35;letter-spacing:-.035em;margin:0 0 18px}
+.description{color:var(--muted);margin:0 auto;max-width:420px;text-wrap:pretty}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 25px;border:1px solid var(--green);border-radius:30px;text-decoration:none;font-weight:650;font-size:.95rem}
+.primary{background:var(--green);color:#fff}.primary:hover{background:#244f32}
+.secondary:hover{background:#d5e6d0}
+a:focus-visible{outline:3px solid #95612b;outline-offset:5px}
+footer{padding:22px 0 30px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:480px){.wrap{width:calc(100% - 32px)}main{padding:40px 0 50px}.sprout{width:52px;height:70px;right:9%}.actions{gap:10px}.button{padding-inline:21px}footer{justify-content:center}}
+</style>
 </head>
 <body>
-  <h1>404</h1>
-  <p>找不到網頁!!!!!!!!</p>
-  <p class="small">也許它被搬走了，或從未存在過。</p>
-  <a href="/" class="btn">首頁 🍵</a>
+<nav class="wrap" aria-label="主要導覽"><a class="brand" href="/">🌿 LangCheng</a></nav>
+<main class="wrap">
+<div>
+<div class="scene" aria-hidden="true"><div class="number">404</div>
+<svg class="sprout" viewBox="0 0 70 90" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35 78V39" stroke="#2f6541" stroke-width="4" stroke-linecap="round"/><path d="M35 51C13 51 7 34 9 20C28 20 39 32 35 51Z" fill="#82a878"/><path d="M35 40C33 19 48 8 64 10C65 28 54 42 35 40Z" fill="#2f6541"/><path d="M16 80H55" stroke="#a1b99a" stroke-width="3" stroke-linecap="round"/></svg>
+</div>
+<p class="eyebrow">PAGE NOT FOUND</p>
+<h1>這條小路，還沒長出頁面。</h1>
+<p class="description">找不到你要的頁面。網址可能有誤，<br>或是這個頁面已經搬家了。<br>回到小花園，看看其他有趣的點子吧。</p>
+<div class="actions"><a class="button primary" href="/">返回首頁 ↗</a><a class="button secondary" href="/#projects">逛逛專案</a></div>
+</div>
+</main>
+<footer class="wrap"><span>LangCheng・用好奇心慢慢做出來。</span><span>迷路也沒關係，從這裡重新出發。</span></footer>
 </body>
 </html>
